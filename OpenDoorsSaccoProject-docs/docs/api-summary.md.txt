@@ -1,0 +1,32 @@
+# API Summary (High Level)
+
+> This is a high-level summary of API functionality (no implementation).
+
+## Authentication
+- POST /api/member/login
+- POST /api/member/request-otp
+- POST /api/member/verify-otp
+- POST /api/staff/login
+- POST /api/staff/request-reset
+- POST /api/staff/reset-password
+
+## Member Operations
+- GET /api/member/profile
+- GET /api/member/accounts
+- POST /api/member/deposit
+- POST /api/member/withdraw
+- POST /api/member/loan/apply
+- GET /api/member/transactions
+
+## Staff Operations
+- POST /api/staff/members/register
+- GET /api/staff/members
+- GET /api/staff/loans
+- POST /api/staff/loans/approve
+- GET /api/staff/transactions
+- GET /api/staff/reports/summary
+
+## MPESA
+- POST /api/mpesa/stkpush
+- POST /api/mpesa/callback
+- GET /api/mpesa/status/:reference

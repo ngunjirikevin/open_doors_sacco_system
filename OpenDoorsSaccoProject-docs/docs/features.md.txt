@@ -1,0 +1,24 @@
+# Features
+
+## Member Portal
+- Secure login
+- View profile and account balances
+- Deposits via MPESA STK Push (sandbox)
+- Withdrawal requests (with dynamic rules)
+- Loan application and loan status tracking
+- View transaction history and receipts
+
+## Staff Dashboard
+- Role-based access: Admin, Credit, Member Services
+- Member registration and account creation
+- Approve/reject loan applications
+- Track repayments and overdue loans
+- Record cash transactions where applicable
+- Receipts and transaction verification
+- Dashboard summaries and reporting
+
+## Non-functional Features
+- Validation for phone numbers and amounts
+- Data integrity via relational database design
+- Clear UI structure for usability
+- Logs for debugging and transaction tracing

@@ -1,0 +1,32 @@
+# System Overview
+
+## Purpose
+The system automates SACCO operations by providing a digital platform for members and staff to manage financial services efficiently.
+
+## User Roles
+### 1) Members
+- Access member portal
+- Make deposits/withdrawals
+- Apply for loans
+- View balances, statements, and receipts
+
+### 2) Staff
+- Register and manage members
+- Handle loans (review, approve, track repayments)
+- Monitor transactions and generate receipts
+- View reports and operational summaries
+
+## Main Workflows
+### Member Deposit (MPESA STK Push)
+1. Member enters amount and phone number
+2. System triggers STK Push request
+3. Member approves payment on phone
+4. Callback confirms payment status
+5. System records transaction and updates account balance
+6. Receipt is generated and accessible in transactions
+
+### OTP Verification (SMS)
+1. User requests OTP
+2. System generates a timed OTP
+3. OTP is sent via SMS (sandbox)
+4. User enters OTP to proceed

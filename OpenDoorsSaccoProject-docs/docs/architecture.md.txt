@@ -1,0 +1,15 @@
+# Architecture
+
+## High-Level Architecture
+- **Frontend:** HTML + Tailwind CSS + JavaScript
+- **Backend:** Node.js + Express (REST API)
+- **Database:** MySQL relational database
+- **External Services:** MPESA Daraja API, Africa’s Talking SMS, ngrok
+
+## Data Flow Summary
+1. UI sends requests to backend API endpoints
+2. Backend validates input and checks authentication/roles
+3. Backend reads/writes data in MySQL
+4. For payments, backend calls MPESA API and listens for callbacks
+5. After confirmation, backend records transactions and updates balances
+6. UI fetches updated balances/receipts and displays them

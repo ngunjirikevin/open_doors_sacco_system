@@ -1,0 +1,19 @@
+# Database Schema Overview
+
+## Core Entities
+- **members**: stores member bio and membership details
+- **staff**: staff users and roles/departments
+- **accounts**: BOSA/FOSA/LOAN accounts per member
+- **transactions**: deposits, withdrawals, loan payments, fees
+- **loans**: loan requests, approvals, repayment tracking
+- **receipts**: receipt numbers and transaction references
+
+## Integrity & Relationships
+- members -> accounts (1-to-many)
+- accounts -> transactions (1-to-many)
+- staff -> transactions (recorded_by)
+- members -> loans (1-to-many)
+
+## Notes
+- Use foreign keys and constraints to maintain integrity
+- Store payment references for MPESA tracking and reconciliation
